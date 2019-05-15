@@ -15,7 +15,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #999;
+  color: black;
 }
 a:hover {
   color: #6633ff;
@@ -66,29 +66,30 @@ a:hover {
   transition: all .5s;
 }
 .nav a:hover {
-  color: white
+  color: lightcoral;
 }
 
 header {
   text-align: center;
-  background: url('images/austin.jpg') no-repeat top center ;
+  background: url('images/austin.jpg') no-repeat top center;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
 }
 header {
   line-height: 1.2;
-  background
 }
+
 header .profile-image {
   margin-top: 50px;
   width: 175px;
   height: 175px;
   border-radius: 50%;
   border: 3px solid lightcoral;
-  transition: all .7s;
+  transition: all .5s;
   padding: 10px;
 }
+
 header .profile-image:hover {
   transform: scale(1.2) rotate(360deg);
 }
@@ -116,19 +117,21 @@ main {
   font-size: 16px;
 }
 .card {
-  margin: 30px;
+  margin: 50px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
   background: white;
   border-bottom: 4px solid #ccc;
-  border-radius: 6px;
-  transition: all .5s;
+  border-right: 4px solid #ccc;
+  border-radius: 10px;
+  transition: all .2s;
   font-family: 'Times New Roman', Times, serif;
   font-size: 17px;
 }
 .card:hover {
-  border-color: lightcoral;
+  border-color: black;
+  transform: scale(1.1);
 }
 
 ul.skills {
@@ -148,6 +151,38 @@ ul.skills {
 .skills li:nth-child(odd) {
   background: #5479f5;
   color: white
+}
+
+.dog-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  border: 3px solid lightcoral;
+  transition: all .7s;
+  padding: 7px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.computer-image {
+  width: 250px;
+  height: 250px;
+  transition: all .7s;
+  padding: 7px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wifi-image {
+  width: 350px;
+  height: 220px;
+  transition: all .7s;
+  padding: 7px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer {
@@ -231,4 +266,3 @@ a.social:hover {
   }
 
 }
-
