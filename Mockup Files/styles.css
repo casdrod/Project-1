@@ -15,7 +15,7 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #999;
 }
 a:hover {
   color: #6633ff;
@@ -25,13 +25,12 @@ a:hover {
 
 .main-nav {
   width: 100%;
-  background: white;
+  background: black;
   min-height: 30px;
   padding: 10px;
   position: fixed;
   text-align: center;
 }
-
 .nav {
   display: flex;
   justify-content: space-around;
@@ -44,21 +43,8 @@ a:hover {
 .nav .name {
     display: block;
     margin-right: auto;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    color: white;
 }
-
-.nav .top_links { 
-  color: black;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 20px;
-}
-
-.name_2 {
-  color: white;
-}
-
 .nav li {
   padding: 5px 10px 10px 10px;
 }
@@ -66,72 +52,54 @@ a:hover {
   transition: all .5s;
 }
 .nav a:hover {
-  color: lightcoral;
+  color: white
 }
 
 header {
   text-align: center;
-  background: url('images/austin.jpg') no-repeat top center;
+  background: url('images/portland.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
 }
 header {
-  line-height: 1.2;
+  line-height: 1.5;
 }
-
 header .profile-image {
   margin-top: 50px;
-  width: 175px;
-  height: 175px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  border: 3px solid lightcoral;
+  border: 3px solid white;
   transition: all .5s;
-  padding: 10px;
 }
-
 header .profile-image:hover {
-  transform: scale(1.2) rotate(360deg);
+  transform: scale(1.2) rotate(5deg);
 }
-
-main {
-  background: url('images/pinkbackground.png') no-repeat top center ;
-  background-size: cover;
-  overflow: hidden;
-}
-
 .tag {
-  background-color: lightcoral;
+  background-color: #efefef;
   color: black;
-  padding: 9px;
-  border-radius: 10px;
+  padding: 10px;
+  border-radius: 5px;
   display: table;
   margin: 10px auto;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 32px;
 } 
 .location {
-  background-color: white;
-  color: black;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 16px;
+  background-color: #222;
+  color: yellow;
 }
 .card {
-  margin: 50px;
+  margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
-  background: white;
+  background: #fff;
   border-bottom: 4px solid #ccc;
-  border-right: 4px solid #ccc;
-  border-radius: 10px;
-  transition: all .2s;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 17px;
+  border-radius: 6px;
+  transition: all .5s;
 }
 .card:hover {
-  border-color: black;
-  transform: scale(1.1);
+  border-color: #ff99ff;
 }
 
 ul.skills {
@@ -142,47 +110,14 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #f13333;
-  color: black;
+  background: #ff9904;
+  color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
 .skills li:nth-child(odd) {
-  background: #5479f5;
-  color: white
-}
-
-.dog-image {
-  width: 250px;
-  height: 250px;
-  border-radius: 100%;
-  border: 3px solid lightcoral;
-  transition: all .7s;
-  padding: 7px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.computer-image {
-  width: 250px;
-  height: 250px;
-  transition: all .7s;
-  padding: 7px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.wifi-image {
-  width: 350px;
-  height: 220px;
-  transition: all .7s;
-  padding: 7px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  background: #0399ff;
 }
 
 footer {
@@ -194,7 +129,6 @@ footer {
 footer .copyright {
   top: -8px;
   font-size: .75em;
-  
 }
 
 footer ul {
@@ -217,11 +151,15 @@ a.social {
   opacity: .4;
   transition: all .5s;
 }
-
+a.twitter {
+  background-image: url(images/twitter.svg);
+}
+a.linkedin {
+  background-image: url(images/linkedin.svg);
+}
 a.github {
   background-image: url(images/github.svg);
 }
-
 a.social:hover {
   opacity: 1;
 }
@@ -235,7 +173,7 @@ a.social:hover {
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
       display: flex; 
-      max-width: 2000px;
+      max-width: 1200px;
       -ms-flex-pack: distribute;
       justify-content: space-around;
       margin: 0 auto;
@@ -266,3 +204,4 @@ a.social:hover {
   }
 
 }
+
