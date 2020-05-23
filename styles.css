@@ -25,35 +25,42 @@ a:hover {
 
 /* Section Styles */
 
-.main-nav {
+.top-bar {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   background: white;
   min-height: 30px;
   padding: 10px;
   position: fixed;
   text-align: center;
+  background: url('images/pinkbackground.png') top center ;
 }
 
-.nav {
-  display: flex;
+.main-nav{
   justify-content: space-around;
   font-weight: 700;
   list-style-type: none;
-  margin: 0 auto;
+  margin: auto 10px auto auto;
   padding: 0;
+  font-family: 'Merriweather';
+  font-size: 18px;
 }
 
-.nav .name {
+p {
+  margin-right: auto auto auto 10px;
+}
+
+.name {
     display: block;
-    margin-right: auto;
+    margin: auto auto auto 2em;
     color: black;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Merriweather';
     font-size: 20px;
 }
 
-.nav .top_links { 
+.top_links { 
   color: black;
-  font-family: 'Times New Roman', Times, serif;
   font-size: 20px;
 }
 
@@ -155,31 +162,31 @@ ul.skills {
   color: white
 }
 
+
+.dog-image {
+  border-radius: 100%;
+  border: 3px solid lightcoral;
+}
+
+
 .dog-image {
   width: 250px;
   height: 250px;
-  border-radius: 100%;
-  border: 3px solid lightcoral;
-  transition: all .7s;
-  padding: 7px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .computer-image {
   width: 250px;
   height: 250px;
-  transition: all .7s;
-  padding: 7px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .wifi-image {
   width: 350px;
   height: 220px;
+}
+
+.dog-image,
+.computer-image,
+.wifi-image {
   transition: all .7s;
   padding: 7px;
   display: block;
@@ -220,13 +227,14 @@ a.social {
   transition: all .5s;
 }
 
+a.social:hover {
+  opacity: 1;
+}
+
 a.github {
   background-image: url(images/github.svg);
 }
 
-a.social:hover {
-  opacity: 1;
-}
 .clearfix {
   clear: both;
 }
